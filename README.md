@@ -6,6 +6,22 @@ Qt-CMake-Template
 
 A Simple Qt5 Program template with CMake.
 
+## Project structur
+
+```
+qt-cmake-template/
+    ├── QtTemplate/
+    │   ├──main
+    │   │   └── ...
+    │   └──tests
+    │       └── ...
+    ├── setup.py
+    ├── run.sh
+    ├── LICENSE
+    ├── README.md
+    └── ...
+```
+
 ## Needed tools
 
 -   CMake
