@@ -5,22 +5,20 @@
 
 using namespace std;
 
-
-class SlotExample : public QObject
-{
+class SlotExample : public QObject {
     Q_OBJECT
 
-public:
+  public:
     SlotExample();
 
-    int value() ;
+    int value();
 
-public slots:
+  public slots:
     void setValue(int value);
 
-signals:
+  signals:
     void valueChanged(int newValue);
 
-private:
+  private:
     int m_value;
 };
