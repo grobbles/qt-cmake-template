@@ -18,7 +18,7 @@ if(WIN32)
 endif()
 
 # Find the QtWidgets library
-find_package(Qt5 REQUIRED COMPONENTS Widgets)
+find_package(Qt5 REQUIRED COMPONENTS Widgets Core)
 
 file(GLOB SOURCES "main.cpp" "*.cpp" "*.hpp" "*.h"  "*.ui" "*/*.cpp" "*/*.hpp"  "*/*.ui" "*/*.h")
 message(${SOURCES})
@@ -26,4 +26,4 @@ message(${SOURCES})
 add_executable(${MODULE_NAME} ${SOURCES})
 
 # Add the Qt5 Widgets for linking
-target_link_libraries(${MODULE_NAME} Qt5::Widgets)
+target_link_libraries(${MODULE_NAME} Qt5::Widgets Qt5::Core)
