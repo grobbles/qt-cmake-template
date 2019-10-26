@@ -1,6 +1,4 @@
-Qt-CMake-Template
-===================
-
+# Qt-CMake-Template
 
 ## Description
 
@@ -15,7 +13,6 @@ qt-cmake-template/
     │   │   └── ...
     │   └──tests
     │       └── ...
-    ├── setup.py
     ├── run.sh
     ├── LICENSE
     ├── README.md
@@ -30,9 +27,16 @@ qt-cmake-template/
 -   GTest (https://github.com/google/googletest.git)
 -   Qt
 
+# Install QT
+
+´´´
+    sudo apt-get install qt5-default
+´´´
+
 ### Install GTest
 
 -   checkout this repo "https://github.com/google/googletest.git" and install all with cmake
+
 ```bash
     git clone https://github.com/google/googletest.git
     cd googletest
@@ -40,7 +44,8 @@ qt-cmake-template/
     make install
 ```
 
--   install this lib with following command "sudo apt-get install libgtest-dev"
+-   install this lib with following command:
+
 ```bash
     sudo apt-get install libgtest-dev
     sudo apt-get install cmake
@@ -51,7 +56,6 @@ qt-cmake-template/
     # copy or symlink libgtest.a and libgtest_main.a to your /usr/lib folder
     sudo cp *.a /usr/lib
 ```
-
 
 ## Start Development
 
@@ -75,6 +79,7 @@ To build the project run the scpript with following command
 ```
 
 Execute the program
+
 ```bash
      ./run.sh -s
 ```
@@ -82,9 +87,9 @@ Execute the program
 ## IDE
 
 The qt cmake template project is optimized for:
--  visual studio code IDE.
--  qt creator 
 
+-   visual studio code IDE.
+-   qt creator
 
 ## Git Workflow
 
